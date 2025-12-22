@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../quizzes/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Programming Assignments - MPCS 51042: Python Programming</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming-assignments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MPCS 51042: Python Programming" class="md-header__button md-logo" aria-label="MPCS 51042: Python Programming" data-md-component="logo">
+      
+  <img src="../../assets/python.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MPCS 51042: Python Programming
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Programming Assignments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MPCS 51042: Python Programming" class="md-nav__button md-logo" aria-label="MPCS 51042: Python Programming" data-md-component="logo">
+      
+  <img src="../../assets/python.png" alt="logo">
+
+    </a>
+    MPCS 51042: Python Programming
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syllabus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dir-python.jpt.sh" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Coursework
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Coursework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Programming Assignments
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Programming Assignments
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-out-an-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Out an Assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-on-an-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working on an Assignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working on an Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      pytest Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grading
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snu-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNU Scale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resubmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resubmissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#late-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Late Submissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grading-disputes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grading Disputes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-quality-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality &amp; Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Quality & Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-banned-constructs-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Banned Constructs (-2)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-incomplete-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Incomplete (-1.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-function-decomposition-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Function Decomposition (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-non-idiomatic-unpythonic-code-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Non-idiomatic (Unpythonic) Code (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-variable-names-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Variable Names (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-commenting-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Commenting (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-hard-to-read-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Hard to Read (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-duplicating-data-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency: Duplicating Data (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-major-memory-inefficiency-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency: Major Memory Inefficiency (-2)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeated-minor-efficiency-issues-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repeated minor efficiency issues (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redundant-work-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redundant work (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#major-performance-issue-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major performance issue (-2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quizzes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quizzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assignments &amp; Grading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Policies
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Policies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policies/honesty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Academic Honesty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policies/accessibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policies/course-staff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Staff Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policies/diversity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diversity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policies/ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/uv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using uv
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://edstem.org/us/courses/87373/discussion" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ed Discussion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://uchicago-cs.github.io/student-resource-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CS Student Resource Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-out-an-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Out an Assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-on-an-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working on an Assignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working on an Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      pytest Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grading
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snu-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNU Scale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resubmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resubmissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#late-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Late Submissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grading-disputes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grading Disputes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-quality-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality &amp; Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Quality & Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-banned-constructs-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Banned Constructs (-2)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-incomplete-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Incomplete (-1.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-function-decomposition-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Function Decomposition (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-non-idiomatic-unpythonic-code-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Non-idiomatic (Unpythonic) Code (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-variable-names-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Variable Names (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-commenting-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Commenting (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-hard-to-read-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality: Hard to Read (-0.5)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-duplicating-data-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency: Duplicating Data (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-major-memory-inefficiency-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency: Major Memory Inefficiency (-2)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeated-minor-efficiency-issues-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repeated minor efficiency issues (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redundant-work-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redundant work (-1)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#major-performance-issue-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major performance issue (-2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="programming-assignments">Programming Assignments</h1>
+<p>There will be seven programming assignments and a final project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For planning purposes, it may be helpful to know Homework #0 and #6 are shorter than the rest.</p>
+</div>
+<p>All programming assignments in this course will be distributed via GitHub Classroom and submitted via Gradescope. The dates are on the <a href="../../#schedule">schedule</a>.</p>
+<h2 id="checking-out-an-assignment">Checking Out an Assignment</h2>
+<ol>
+<li>When an assignment is made available a link to GitHub classroom will be posted on Ed. Clicking the link will create a new private repository for the assignment.</li>
+<li>
+<p>Once the repository is created, you will want to clone the repository to your machine.</p>
+<p>Visit your repository on GitHub, and click on the green "Code" button. Be sure SSH is selected as pictured. Copy the URL to the repository.</p>
+<p><img alt="" src="../../assets/clone.png" /></p>
+<p>To check out your project, you can run <code>git clone &lt;URL&gt;</code> from the machine you're doing your work on.</p>
+</li>
+<li>
+<p>Once the assignment is checked out, the first step will be <code>uv sync</code>, this will ensure you have the appropriate packages downloaded for the assignment.</p>
+</li>
+<li>Each assignment has a README.md, this contains the full description of the assignment. It is recommended you read <strong>all the way through</strong> before beginning, careful reading of requirements is a skill being practiced in this class.</li>
+</ol>
+<h2 id="working-on-an-assignment">Working on an Assignment</h2>
+<h3 id="general-tips">General Tips</h3>
+<ul>
+<li>
+<p><strong>Install dependencies</strong>. Once the assignment is checked out, first run <code>uv sync</code>. This will ensure that you have the necessary packages for this project, details will be discussed in class.</p>
+</li>
+<li>
+<p><strong>Read the instructions carefully</strong> - Make sure you understand what you're being asked to do before you start writing code. If you're not sure, ask for clarification.</p>
+</li>
+<li>
+<p><strong>Check in often</strong> - Check your code into git and push to GitHub regularly. This will help you avoid losing work if something goes wrong with your machine.</p>
+</li>
+<li>
+<p><strong>Run the tests</strong> - The tests are there to help you. If you're not sure if your code is correct, run the tests and see if they pass. If they don't, read the error messages carefully - they may give you a hint as to what's wrong.</p>
+</li>
+<li>
+<p><strong>Experiment in the REPL</strong> - If you're not sure how a particular function or method works, try it out in the REPL (<code>python3</code> or <code>ipython</code>). A major advantage of interpreted languages is this ability to experiment interactively.</p>
+</li>
+<li>
+<p><strong>Ask questions of course staff</strong> - If anything is not clear, ask questions via Ed! If you are stuck or need help with a concept, office hours may be a good idea as well!
+                See <a href="../../guides/help/">Getting Help</a> for more advice on how to ask for help.</p>
+</li>
+<li>
+<p><strong>Use a Linter</strong>.  <code>ruff</code> will be introduced and is recommended. Using it (or a linter of your choice) in this course will let you focus on the actual problem, help you write cleaner code, and detect common issues that may result in a lower grade.</p>
+</li>
+</ul>
+<h3 id="pytest-tips"><code>pytest</code> Tips</h3>
+<p>Each assignment comes with a set of tests to be run with <code>pytest</code>.</p>
+<p>(If you are using <code>uv</code>, remember to prefix all <code>pytest</code> commands with <code>uv run</code>!)</p>
+<p><code>pytest</code> has some helpful command line options you may wish to use:</p>
+<ul>
+<li>Passing a filename like <code>tests/test_markov.py</code> will run only the tests in that file.</li>
+<li><code>-v</code> will print out more information about each test</li>
+<li><code>-vv</code> will print out even more information about each test, particularly useful when comparing expected output vs. actual</li>
+<li><code>-s</code> will include any output from <code>print</code> statements (normally suppressed by <code>pytest</code>).</li>
+<li><code>-k &lt;pattern&gt;</code> will only run tests whose names match the pattern. (So <code>pytest -k frontend</code> would match <code>test_frontend_template</code> and <code>test_frontend_call</code> but not <code>test_database_setup</code>, etc.)</li>
+<li><code>-x</code> will stop running tests after the first failure.</li>
+</ul>
+<h2 id="grading">Grading</h2>
+<p>We will be using <strong>specifications grading</strong> in this course. The goal of specifications grading is to help students focus on their mastery of the material and identify areas for improvement as the quarter progresses.</p>
+<p>Shorthand: focus on skills, not scores.</p>
+<p>If you are new to using specifications grading, here's what you can expect:</p>
+<ul>
+<li>For each assignment you will be given a set of specifications. Meeting all/most of those will earn the highest grade. This is described in detail below, but aims to allow you to focus on learning and not on the difference between an 89 and a 90 on an assignment. It also more closely resembles how work is evaluated in the real world, where work is either satisfactory or not.</li>
+<li>Where time permits, we will allow resubmissions of work to learn from mistakes. The specific policy is detailed below.</li>
+</ul>
+<h3 id="snu-scale">SNU Scale</h3>
+<p>Programming Assignments will be evaluated using an SNU scale:</p>
+<ul>
+<li>
+<p><strong>Satisfactory (S)</strong>: While the work has some room for improvement, the student has put in a good-faith effort to complete all the work and demonstrated sufficient mastery of the material.</p>
+</li>
+<li>
+<p><strong>Needs Improvement (N)</strong>: The student has put in a good-faith effort to complete the work, but revealed a lack of mastery in the material that can be addressed via concrete feedback. The work could become Satisfactory with some major revisions.</p>
+</li>
+<li>
+<p><strong>Ungradable (U)</strong>: The student did not submit any work, or did not complete a sufficient portion of the work to be graded.</p>
+</li>
+</ul>
+<p>All assignments will be evaluated for <strong>completeness</strong> and <strong>code quality</strong>, and given a grade for each.</p>
+<p><strong>Completeness</strong> will be determined using an automated test suite. <em>"Does your code do what we asked of it?"</em></p>
+<p><strong>Code quality</strong> will be evaluated by reviewing the code for:</p>
+<ol>
+<li>adherence to the style guide</li>
+<li>appropriate choice of algorithms and data structures</li>
+<li>appropriate use of functions and classes to structure the computation.</li>
+</ol>
+<h3 id="resubmissions">Resubmissions</h3>
+<p>You will be allowed to resubmit one programming assignment (not the project).</p>
+<p>Once a programming assignment is graded and returned to you, there will be a two week window for you to resubmit that assignment. This means that, if you produce work that needs some improvement, you will have a chance to address the grader's feedback to improve your score on that assignment.</p>
+<p>The procedure for resubmissions will be shared via Ed.</p>
+<h3 id="late-submissions">Late Submissions</h3>
+<p>Late submissions will not be accepted in this class, except under extraordinary circumstances. Please bear in mind that the grading scheme will be set up to absorb a reasonable amount of sub-par work, and also allows you to resubmit at most one programming assignment.</p>
+<p>That said, to be clear: <strong>if you encounter some sort of emergency (medical, family, etc.) please reach out to your instructor as soon as you are able to do so</strong>. We are more than happy to find ways to provide additional flexibility in these situations. Ideally, you should notify us of these circumstances before the work is due so we can discuss options with you.</p>
+<p>In other words, the late submission policy applies to <em>ordinary</em> circumstances: if you are having a busy week, you have an event that overlaps with a deadline, etc., then the grading scheme will have some built-in flexibility for this. Instead of trying to argue for a few extra days to work on an assignment, you should just submit the work you have completed by the deadline, so you can get feedback on that work and use that feedback to improve your work in future assignments, or even to resubmit the assignment as described above.</p>
+<h3 id="grading-disputes">Grading Disputes</h3>
+<p>Except in very specific cases (described below), you cannot dispute the score assigned to you on a piece of work. The score you receive on a piece of work is meant to convey feedback on your level of mastery, and you should take it as an opportunity to understand the areas of improvement in your work. You are more than welcome to ask us for concrete advice on how to improve your work, and we are always more than happy to have those kind of conversations with students, including going over your code. On the other hand, we will not entertain requests to change your score just because you feel your work deserved a higher score.</p>
+<p>There is one exception to this: if a grader made an factual mistake in your grading. Please note that this only includes cases where a grader makes an erroneous statement about your code in their feedback. It does not include cases where you simply disagree with whether something deserves to be flagged as incorrect.</p>
+<p>For example, suppose you receive a piece of feedback that says “Incorrect: Function X did not check that parameter Y is greater than zero”. If function X in your code <em>did</em> perform this check, and the grader missed this fact (and erroneously gave you that feedback), you can ask us to review this decision. Please note that, even if the feedback is amended, it may not affect your actual SNU score.</p>
+<p>We ask that you keep these requests brief and to the point: no more than a few sentences identifying the exact statement that the grader made and the reasons you believe the statement was mistaken, including references to specific parts of your code (e.g., “I did check the value of the parameter in line 107”). Focus on laying out the facts, and nothing else.</p>
+<p>Finally, it is also your responsibility to make these requests in a timely manner. Requests to review grading mistakes must be submitted no later than <strong>one week</strong> after a graded piece of work is returned to you. After that time, we will not consider any such requests, <em>regardless of whether the request is reasonable and justified</em>.</p>
+<p>Disputes should be submitted via the <strong>Regrade Request</strong> mechanism of Gradescope.</p>
+<h2 id="code-quality-efficiency">Code Quality &amp; Efficiency</h2>
+<p>Producing code that solves a problem is only part of the task, that code needs to be intelligible to your fellow developer and/or future self.
+Hard to understand &amp; overly complex code is source of subtle bugs.</p>
+<p>The criteria below are things the graders will look for on every assignment.
+Some assignments may have additional criteria noted in the README.</p>
+<p>Each assignment will have a threshold of how many points you can have deducted and receive an S (typically 1-3), an N (typically 3-5).
+Assignment with serious quality issues may receive a U for code quality &amp; efficiency even if all tests pass.</p>
+<h3 id="code-quality-banned-constructs-2">Code Quality: Banned Constructs (-2)</h3>
+<p>Some Python features are considered bad practice in production code.</p>
+<p>While you will see these in examples, most projects &amp; teams prohibit their use.</p>
+<p>Banned Constructs:</p>
+<ul>
+<li>use of a bare <code>except</code> or <code>except Exception</code> statement</li>
+<li>use of <code>import *</code> is explicitly banned in this class</li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">modA</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">modB</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># The origin of symbols used in this file are not clear.</span>
+<span class="c1"># In fact, reordering the imports or changes to either</span>
+<span class="c1"># could result in the code breaking if the two modules</span>
+<span class="c1"># define the same.</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># INCORRECT: this code incorrectly catches the NameError</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">func</span><span class="p">(</span><span class="n">this_variabl_has_typos</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="o">...</span>
+
+<span class="c1"># CORRECT: this only catches ValueError, so if func raises</span>
+<span class="c1">#          that error it is correctly handled</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">func</span><span class="p">(</span><span class="n">this_variabl_has_typos</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="o">...</span>
+</code></pre></div>
+<h3 id="code-quality-incomplete-15">Code Quality: Incomplete (-1.5)</h3>
+<p>An assignment that is missing significant portions will have this penalty applied in addition to any present in the code.</p>
+<p>(This makes it less likely that incomplete assignments will get an <strong>S</strong> due to lack of code meaning a lack of style issues.)</p>
+<h3 id="code-quality-function-decomposition-1">Code Quality: Function Decomposition (-1)</h3>
+<ul>
+<li>The presence of copy/pasted code where it would be more appropriate to use a helper function.</li>
+<li>One large function that does many things instead of smaller functions.</li>
+</ul>
+<h3 id="code-quality-non-idiomatic-unpythonic-code-1">Code Quality: Non-idiomatic (Unpythonic) Code (-1)</h3>
+<p>Code that does not use Python's features correctly.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># INCORRECT: this code obtains an integer only to index back into</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="c1"># CORRECT: use direct iteration, or enumerate</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="code-quality-variable-names-05">Code Quality: Variable Names (-0.5)</h3>
+<ul>
+<li>Variable names should be meaningful &amp; aid in understanding of the code.</li>
+<li>Avoid using single letter names (other than in common contexts like i/j to loop over integers).</li>
+</ul>
+<h3 id="code-quality-commenting-05">Code Quality: Commenting (-0.5)</h3>
+<p>Comments should enhance understanding of the code.</p>
+<ul>
+<li>Code that is significantly under-commented. (Complex sections with no explanation at all.)</li>
+<li>Code that is significantly over-commented, meaning code that describes "how" instead of "why".</li>
+<li>Missing docstrings on multiple functions.</li>
+</ul>
+<h3 id="code-quality-hard-to-read-05">Code Quality: Hard to Read (-0.5)</h3>
+<p>Not following other general formatting guidelines that aim to increase readability.</p>
+<ul>
+<li>Improper indentation.</li>
+<li>Code consistently exceeding line length.</li>
+<li>Improper use of blank lines per style guide.</li>
+<li>Debugging statements left in (<code>print</code>, <code>breakpoint</code>, etc.).</li>
+<li>Use of "magic numbers" or strings where constants would be appropriate.</li>
+</ul>
+<h3 id="efficiency-duplicating-data-1">Efficiency: Duplicating Data (-1)</h3>
+<p>Duplicating data in unnecessary ways, such as copying a list to a tuple for no reason.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># INCORRECT: creates three copies of the list of words</span>
+<span class="k">def</span> <span class="nf">get_unique_words</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">lowercase_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span> <span class="c1"># copy 1</span>
+    <span class="n">cleaned_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;.,!?&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">lowercase_words</span><span class="p">]</span> <span class="c1"># copy 2</span>
+    <span class="n">unique_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">cleaned_words</span><span class="p">)</span> <span class="c1"># copy 3</span>
+    <span class="k">return</span> <span class="n">unique_words</span>
+
+<span class="c1"># CORRECT: only a single copy</span>
+<span class="k">def</span> <span class="nf">get_unique_words_efficient</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">unique_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
+        <span class="n">unique_words</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;.,!?&#39;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">unique_words</span>
+</code></pre></div>
+<h3 id="efficiency-major-memory-inefficiency-2">Efficiency: Major Memory Inefficiency (-2)</h3>
+<p>Repeated or extreme memory inefficiency. </p>
+<p>Often where hundreds or thousands of records are in memory, where one would have been sufficient.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># CORRECT</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">fd</span><span class="p">):</span>
+    <span class="n">process_data</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+
+<span class="c1"># INCORRECT: creates an entire second copy of the data</span>
+<span class="c1">#            despite there only being a need to access one at a time</span>
+<span class="n">items</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">fd</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+    <span class="n">process_data</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="repeated-minor-efficiency-issues-1">Repeated minor efficiency issues (-1)</h3>
+<p>Two or more small issues that lead to code being slower/less efficient than it should be.</p>
+<p>Some examples:</p>
+<ul>
+<li>Reimplementing built in functions.</li>
+<li>Combining lots of strings using <code>+</code> instead of <code>.join</code> or f-strings.</li>
+<li>Incorrect data structure (e.g. using a list to keep unique items instead of a set)</li>
+</ul>
+<h3 id="redundant-work-1">Redundant work (-1)</h3>
+<p>Doing redundant work, like going through a list twice when a single pass would have sufficed.</p>
+<p>This can be thought of as "too many loops", looping three or more times when one would do.</p>
+<p>Or in terms of complexity, this can be thought of as turning an O(N) into an O(2N) or similar.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># INCORRECT: this code iterates through the data twice</span>
+<span class="n">count_positive</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">count_negative</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># CORRECT: this code iterates once</span>
+<span class="n">count_negative</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">count_positive</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">count_negative</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">count_positive</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+<h3 id="major-performance-issue-2">Major performance issue (-2)</h3>
+<p>This penalty applies to solutions where a drastically more efficient solution exists.</p>
+<p><em>"Completely unnecessary loop" or "Too many nested loops"</em></p>
+<p>In terms of complexity this might mean:</p>
+<ul>
+<li>O(1) into O(N)</li>
+<li>O(N) into O(N^2)</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># INCORRECT: O(N^2) implementation that needs a nested for loop</span>
+<span class="k">def</span> <span class="nf">find_duplicates_quadratic</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">duplicates</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">lst</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">and</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">duplicates</span><span class="p">:</span>
+                <span class="n">duplicates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">duplicates</span>
+
+<span class="c1"># CORRECT: O(N) implementation that uses a set appropriately</span>
+<span class="k">def</span> <span class="nf">find_duplicates_linear</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">duplicates</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="n">duplicates</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">duplicates</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

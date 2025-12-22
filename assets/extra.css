@@ -1,0 +1,5 @@
+:root > * {
+  --md-primary-fg-color: #3776ab; /* UChicago Maroon */
+  --md-primary-fg-color--light: #d6d6ce;
+  --md-primary-fg-color--dark: #3776ab;
+}

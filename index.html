@@ -1,0 +1,1253 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="coursework/programming/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>MPCS 51042: Python Programming</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/extra.css">
+      
+      <style>
+        /* Custom layout adjustments */
+        .md-grid {
+          max-width: 1440px; /* Increase overall max width */
+        }
+        .md-sidebar--primary {
+          width: 200px; /* Make left sidebar narrower (default is 242px) */
+        }
+        .md-sidebar--secondary {
+          width: 200px; /* Make right sidebar narrower (default is 242px) */
+        }
+        .md-main__inner {
+          margin-left: 200px; /* Match left sidebar width */
+          margin-right: 200px; /* Match right sidebar width */
+        }
+        @media screen and (max-width: 76.1875em) {
+          .md-sidebar--primary {
+            width: 200px; /* Keep narrower sidebar on medium screens */
+            left: -200px; /* Adjust off-canvas position */
+          }
+        }
+      </style>
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mpcs-51042-python-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="MPCS 51042: Python Programming" class="md-header__button md-logo" aria-label="MPCS 51042: Python Programming" data-md-component="logo">
+      
+  <img src="assets/python.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MPCS 51042: Python Programming
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Syllabus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="MPCS 51042: Python Programming" class="md-nav__button md-logo" aria-label="MPCS 51042: Python Programming" data-md-component="logo">
+      
+  <img src="assets/python.png" alt="logo">
+
+    </a>
+    MPCS 51042: Python Programming
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Syllabus
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Syllabus
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#course-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Staff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Staff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#office-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Office Hours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Readings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dir-python.jpt.sh" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Coursework
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Coursework
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coursework/programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programming Assignments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coursework/quizzes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quizzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coursework/grading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assignments &amp; Grading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Policies
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Policies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policies/honesty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Academic Honesty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policies/accessibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policies/course-staff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Staff Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policies/diversity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diversity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policies/ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/uv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using uv
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://slack.com/mpcs51042" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Slack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://uchicago-cs.github.io/student-resource-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CS Student Resource Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#course-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Staff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Staff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#office-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Office Hours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Readings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="mpcs-51042-python-programming">MPCS 51042: Python Programming</h1>
+<h2 id="course-description">Course Description</h2>
+<p>Python is one of the most commonly used programming languages today across a huge range of sectors.
+It is a language designed to be easy to learn that emphasizes readable code via powerful and extensible syntax.
+This course provides a thorough overview of the Python language with an emphasis on writing idiomatic code.</p>
+<p>This course aims to:</p>
+<ul>
+<li>Build general-purpose programming skills. From thinking about decomposing problems into parts to thoughtful choices of data structures and algorithms.</li>
+<li>Emphasize Python's strengths as a multi-paradigm language by exploring procedural, functional, and object-oriented styles.</li>
+<li>Introduce the powerful ecosystem of Python libraries, and encourage continued growth as a Python programmer.</li>
+</ul>
+<p>This course will cover:</p>
+<ul>
+<li>Python Basics: types, variable, operations, control flow, iteration</li>
+<li>Functions: including scope rules, functional programming constructs, recursion, and generators</li>
+<li>Object-Oriented Programming in Python: classes, dynamic attributes, operators</li>
+<li>Data structures in Python (lists, stacks, hash tables, queues, trees)</li>
+<li>Modules, packages, and the broader Python ecosystem</li>
+<li>A brief introduction to scientific computing in Python</li>
+</ul>
+<h2 id="course-staff">Course Staff</h2>
+<p><strong>Instructor</strong></p>
+<p>Tyler J. Skluzacek <br>
+<a href="mailto:skluzacek@uchicago.edu">skluzacek@uchicago.edu</a> <br>
+Office: JCL 398E <br></p>
+<p><strong>Teaching Assistants</strong></p>
+<ul>
+<li>Person A</li>
+<li>Person B</li>
+<li>Person C</li>
+<li>Person D</li>
+</ul>
+<h3 id="office-hours">Office Hours</h3>
+<p>Regular office hours start Week 2, unless otherwise indicated.</p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Where</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Person A</td>
+<td>JCL 207</td>
+<td>Monday 9:00-11:00am</td>
+</tr>
+<tr>
+<td>Person B</td>
+<td>JCL 207</td>
+<td>Tuesday 3:30-4:30pm</td>
+</tr>
+<tr>
+<td>Person C</td>
+<td>JCL 205</td>
+<td>Wednesday, 10:00am-noon (<strong>starting Week 3</strong>)</td>
+</tr>
+<tr>
+<td>Tyler J. Skluzacek</td>
+<td>JCL 398E</td>
+<td>Wednesday 2:00-4:00pm</td>
+</tr>
+<tr>
+<td>Person D</td>
+<td>JCL 205</td>
+<td>Thursday 9:00-11:00am</td>
+</tr>
+<tr>
+<td>Person E</td>
+<td>JCL Common Area 3A</td>
+<td>Thursday 3:30-4:30pm</td>
+</tr>
+<tr>
+<td>Tyler J. Skluzacek</td>
+<td>Zoom</td>
+<td>Friday, 11am-1pm</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tyler also has openings for appointments available by email request.</p>
+<p>Please note that these are limited and they are shared between multiple classes, so please be considerate in your usage and favor the drop-in office hours for help on assignments.</p>
+</div>
+<h2 id="schedule">Schedule</h2>
+<p>Meets Tuesday &amp; Thursday 11:00am-12:20pm @ JCL 011.</p>
+<p><em>Any schedule changes will be announced in class and on the class Slack channel.</em></p>
+
+<div class="admonition note">
+<p class="admonition-title">Winter 2026 Academic Calendar</p>
+<ul>
+  <li><strong>Monday, January 5</strong>: Winter Quarter Begins</li>
+  <li><strong>Monday, January 19</strong>: Martin Luther King, Jr. Day (class will still be held)</li>
+  <li><strong>Saturday, March 7 – Monday, March 9</strong>: College Reading Period</li>
+  <li><strong>Tuesday, March 10 – Friday, March 13</strong>: College Final Exams</li>
+  <li><strong>Saturday, March 14</strong>: Winter Quarter Ends</li>
+</ul>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th>Week</th>
+  <th>Topics</th>
+  <th>Assignment</th>
+  <th>Resources &amp; Readings <a href="../#textbook">*</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1 <br><i>Jan 5-9</i> </td>
+  <td>
+    <strong>Python Basics</strong>
+    <ul>
+      <li>Running Python</li>
+      <li>Basic Syntax &amp; Data Types</li>
+      <li>Sequence Data Types</li>
+    </ul>
+  </td>
+  <td>Homework #0 Out</td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 1-3.3</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 1-7, 12, 13, 16</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Parts 1-4.5</p>
+  </td>
+</tr>
+<tr>
+  <td>2
+  <br><i>Jan 12-16</i>
+  </td>
+  <td>
+    <strong>Python Basics (Part 2)</strong>
+    <ul>
+      <li>Compound Data Types</li>
+      <li>User Interaction</li>
+      <li>File I/O</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #0</strong>
+    <br>Due Jan 16 @ 11:59pm CT
+    <br><br> Homework #1 Out
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 4.1-4.5, 5.1-5.10, 9.6-9.12</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 8, 9</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Parts 5, 7</p>
+  </td>
+</tr>
+<tr>
+  <td>3
+  <br><i>Jan 19-23</i>
+  </td>
+  <td>
+    <strong>Advanced Functions</strong>
+    <ul>
+      <li>Advanced Arguments</li>
+      <li>Functional Programming</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #1</strong>
+    <br>Due Jan 23 @ 11:59pm CT
+   <br><br> Homework #2 Out
+   <br><strong style="color: green;">Quiz #1 - Jan 22</strong>
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 5-6</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 14, 17-20, 39</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Part 4</p>
+  </td>
+</tr>
+<tr>
+  <td>4
+  <br><i>Jan 26-30</i>
+  </td>
+  <td>
+    <strong>Comprehensions, Generators, Decorators</strong>
+    <ul>
+      <li>Generators & Comprehensions</li>
+      <li>Decorators</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #2</strong>
+    <br>Due Jan 30 @ 11:59pm CT
+    <br><br> Homework #3 Out
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 8, 10</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 22-24</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Parts 6, 10-12</p>
+  </td>
+</tr>
+<tr>
+  <td>5
+  <br><i>Feb 2-6</i>
+  </td>
+  <td>
+    <strong>Object Oriented Programming</strong>
+    <ul>
+      <li>Classes</li>
+      <li>Inheritance</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #3</strong>
+    <br>Due Feb 6 @ 11:59pm CT
+    <br><br> Homework #4 Out
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 7</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 26-28</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Parts 9.1-9.4</p>
+  </td>
+</tr>
+<tr>
+  <td>6
+  <br><i>Feb 9-13</i>
+  </td>
+  <td>
+    <strong>Advanced Classes</strong>
+    <ul>
+      <li>Abstract Base Classes</li>
+      <li>Class Based Design</li>
+      <li>Properties</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #4</strong>
+    <br>Due Feb 13 @ 11:59pm CT
+    <br><br> Homework #5 Out
+    <br><strong style="color: green;">Quiz #2 - Feb 11</strong>
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 7</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 29, 31, 32</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Part 9.5</p>
+  </td>
+</tr>
+<tr>
+  <td>7
+  <br><i>Feb 16-20</i>
+  </td>
+  <td>
+    <strong>Python Data Model</strong>
+    <ul>
+      <li>Special Methods</li>
+      <li>Context Managers</li>
+      <li>Exceptions</li>
+      <li>Standard Library</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #5</strong>
+    <br>Due Feb 20 @ 11:59pm CT
+    <br><br> Homework #6 Out
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 3.4-3.7, 4</p>
+    <p><strong>Learning Python:</strong><br>
+    Ch. 30, 32-36, 38</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Part 8</p>
+  </td>
+</tr>
+<tr>
+  <td>8
+  <br><i>Feb 23-27</i>
+  </td>
+  <td>
+    <strong>Python Packages &amp; Ecosystem</strong>
+    <ul>
+      <li>Standard Library Continued</li>
+      <li>PyPI</li>
+      <li>Testing</li>
+    </ul>
+  </td>
+  <td>
+    <strong>Homework #6</strong>
+    <br>Due Feb 27 @ 11:59pm CT
+  </td>
+  <td>
+    <p><strong>Python Distilled:</strong><br>
+    Ch. 9.15, 10</p>
+    <p><a href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a><br>
+    Parts 10-12</p>
+  </td>
+</tr>
+<tr>
+  <td>9
+  <br><i>Mar 2-6</i>
+  </td>
+  <td>
+    <strong>Special Topics</strong>
+    <ul>
+      <li>Past topics have included: optimization, NumPy/pandas, polars, data viz</li>
+    </ul>
+  </td>
+  <td>
+    <br><strong style="color: green;">Quiz #3 - Mar 3</strong>
+  </td>
+  <td></td>
+</tr>
+<tr>
+  <td>10
+  <br><i>Mar 9-13</i>
+  </td>
+  <td colspan=1>Reading Period & Final Exams</td>
+  <td colspan=3>
+    <strong>Final Project</strong>
+    <br>
+    Final Exam TBD
+  </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="readings">Readings</h2>
+<p>While there are no required textbooks for this course, I provide suggested readings from the following books.</p>
+<p>I'd highly recommend picking up <strong>one</strong> of these, there is no need to get both:</p>
+<ul>
+<li>Python Distilled (1st Edition), by David Beazley</li>
+<li>Learning Python (5th Edition), by Mark Lutz</li>
+</ul>
+<p>Additionally, these books may be useful to further explain concepts discussed in this course:</p>
+<ul>
+<li>Fluent Python (2nd Edition), by Luciano Ramalho (<em>1st Edition OK</em>)</li>
+<li>Python in a Nutshell (3rd Edition), by Martelli, Ravenscroft, and Holden</li>
+</ul>
+<h2 id="software-environment">Software Environment</h2>
+<p>We will be using <a href="guides/uv/">uv and Python 3.13</a> for this course, see the linked documentation to get a working environment on your machine.</p>
+<p>See the <a href="https://uchicago-cs.github.io/student-resource-guide/">UChicago CS Student Resource Guide</a> for guidance on getting your environment set up.</p>
+
+<div class="admonition info">
+<p class="admonition-title">Acknowledgment</p>
+<p>Course materials adapted from the original course developed by James Turk.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections"], "search": "assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
