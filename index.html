@@ -49,19 +49,19 @@
           max-width: 1440px; /* Increase overall max width */
         }
         .md-sidebar--primary {
-          width: 200px; /* Make left sidebar narrower (default is 242px) */
+          width: 242px; /* Restore default width for left sidebar */
         }
         .md-sidebar--secondary {
           width: 200px; /* Make right sidebar narrower (default is 242px) */
         }
         .md-main__inner {
-          margin-left: 200px; /* Match left sidebar width */
+          margin-left: 242px; /* Match left sidebar width */
           margin-right: 200px; /* Match right sidebar width */
         }
         @media screen and (max-width: 76.1875em) {
           .md-sidebar--primary {
-            width: 200px; /* Keep narrower sidebar on medium screens */
-            left: -200px; /* Adjust off-canvas position */
+            width: 242px; /* Restore default sidebar width on medium screens */
+            left: -242px; /* Adjust off-canvas position */
           }
         }
       </style>
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    Class Slack
+    Slack Workspace
   </span>
   
 
